@@ -1,0 +1,17 @@
+task,model,avg_rank,friedman_stat,friedman_p,n_datasets
+binary,XGBoost,2.33,18.8889,0.0085,3
+binary,RandomForest,2.67,18.8889,0.0085,3
+binary,LightGBM,1.33,18.8889,0.0085,3
+binary,SVM,7.33,18.8889,0.0085,3
+binary,kNN,4.0,18.8889,0.0085,3
+binary,MLP,4.67,18.8889,0.0085,3
+binary,CNN1D,6.33,18.8889,0.0085,3
+binary,BiLSTM,7.33,18.8889,0.0085,3
+multi,XGBoost,1.67,13.2222,0.0669,3
+multi,RandomForest,2.0,13.2222,0.0669,3
+multi,LightGBM,4.67,13.2222,0.0669,3
+multi,SVM,6.67,13.2222,0.0669,3
+multi,kNN,4.67,13.2222,0.0669,3
+multi,MLP,3.67,13.2222,0.0669,3
+multi,CNN1D,6.33,13.2222,0.0669,3
+multi,BiLSTM,6.33,13.2222,0.0669,3

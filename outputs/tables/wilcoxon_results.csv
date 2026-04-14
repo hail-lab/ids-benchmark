@@ -1,0 +1,15 @@
+task,best,vs,W,p_value,significant
+binary,LightGBM,XGBoost,0.0,0.25,No
+binary,LightGBM,RandomForest,1.0,0.5,No
+binary,LightGBM,SVM,0.0,0.25,No
+binary,LightGBM,kNN,0.0,0.25,No
+binary,LightGBM,MLP,0.0,0.25,No
+binary,LightGBM,CNN1D,0.0,0.25,No
+binary,LightGBM,BiLSTM,0.0,0.25,No
+multi,XGBoost,RandomForest,1.0,0.5,No
+multi,XGBoost,LightGBM,1.0,0.5,No
+multi,XGBoost,SVM,0.0,0.25,No
+multi,XGBoost,kNN,0.0,0.25,No
+multi,XGBoost,MLP,0.0,0.25,No
+multi,XGBoost,CNN1D,0.0,0.25,No
+multi,XGBoost,BiLSTM,0.0,0.25,No

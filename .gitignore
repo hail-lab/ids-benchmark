@@ -1,0 +1,29 @@
+# Data (too large for Git)
+data/raw/
+data/clean/
+
+# Model checkpoints
+outputs/models/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# Environment
+*.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
