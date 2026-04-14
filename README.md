@@ -6,7 +6,7 @@ This repository implements a unified benchmark of eight ML/DL models for network
 
 **Paper:** *A Comprehensive Benchmark of Machine Learning Models for Network Intrusion Detection: Multi-Dataset Evaluation With SHAP Explainability* — submitted to IEEE Access.
 
-**Authors:** Saud Aljaloud and Abdullah Alshammari, University of Ha'il, Saudi Arabia.
+**Authors:** S. Aljaloud and A. Alshammari, University of Ha'il, Saudi Arabia.
 
 ---
 
