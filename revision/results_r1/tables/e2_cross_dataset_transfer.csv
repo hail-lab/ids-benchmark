@@ -1,0 +1,19 @@
+accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,roc_auc,pr_auc,train_dataset,test_dataset,model,setting,n_features
+0.9828,0.9797,0.9672,0.9797,0.9732,0.9984,0.9936,cicids2017,cicids2017,XGBoost,within (5-fold CV),13
+0.9831,0.98,0.9677,0.98,0.9737,0.9984,0.9935,cicids2017,cicids2017,RandomForest,within (5-fold CV),13
+0.9715,0.941,0.9807,0.941,0.959,0.9841,0.9909,ton_iot,ton_iot,XGBoost,within (5-fold CV),13
+0.9707,0.9399,0.9793,0.9399,0.9578,0.9835,0.9906,ton_iot,ton_iot,RandomForest,within (5-fold CV),13
+0.9911,0.9796,0.9803,0.9796,0.9799,0.9995,0.9967,unsw_nb15,unsw_nb15,XGBoost,within (5-fold CV),13
+0.9913,0.9798,0.9809,0.9798,0.9803,0.9994,0.9959,unsw_nb15,unsw_nb15,RandomForest,within (5-fold CV),13
+0.2723,0.5227,0.618,0.5227,0.2417,0.5211,0.7845,cicids2017,ton_iot,XGBoost,transfer,13
+0.2615,0.516,0.6197,0.516,0.2268,0.4984,0.7697,cicids2017,ton_iot,RandomForest,transfer,13
+0.8735,0.5001,0.6219,0.5001,0.4664,0.6571,0.1876,cicids2017,unsw_nb15,XGBoost,transfer,13
+0.8735,0.5,0.4368,0.5,0.4662,0.4877,0.1659,cicids2017,unsw_nb15,RandomForest,transfer,13
+0.3126,0.487,0.4874,0.487,0.3125,0.5205,0.2438,ton_iot,cicids2017,XGBoost,transfer,13
+0.3662,0.5559,0.5514,0.5559,0.3658,0.3908,0.1519,ton_iot,cicids2017,RandomForest,transfer,13
+0.3055,0.4323,0.4629,0.4323,0.2888,0.4203,0.1345,ton_iot,unsw_nb15,XGBoost,transfer,13
+0.1733,0.3777,0.3843,0.3777,0.1732,0.2517,0.0844,ton_iot,unsw_nb15,RandomForest,transfer,13
+0.5398,0.4282,0.4506,0.4282,0.427,0.3459,0.1485,unsw_nb15,cicids2017,XGBoost,transfer,13
+0.4276,0.562,0.5454,0.562,0.4194,0.4413,0.1672,unsw_nb15,cicids2017,RandomForest,transfer,13
+0.2878,0.4882,0.4787,0.4882,0.2766,0.1933,0.6698,unsw_nb15,ton_iot,XGBoost,transfer,13
+0.6908,0.5971,0.5889,0.5971,0.5919,0.5535,0.7731,unsw_nb15,ton_iot,RandomForest,transfer,13

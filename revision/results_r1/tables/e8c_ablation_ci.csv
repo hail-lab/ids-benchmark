@@ -1,0 +1,10 @@
+dataset,config,n_folds,mean_delta_f1,ci95_low,ci95_high,wilcoxon_p
+cicids2017,Hybrid MI-RF (15),5,-0.0035,-0.0043,-0.0023,0.0625
+cicids2017,MI only (top 30),5,-0.0013,-0.0016,-0.0009,0.0625
+cicids2017,RF only (top 15),5,-0.0035,-0.0043,-0.0028,0.0625
+ton_iot,Hybrid MI-RF (15),5,-0.0014,-0.002,-0.0008,0.0625
+ton_iot,MI only (top 30),5,0.0,-0.0001,0.0001,1.0
+ton_iot,RF only (top 15),5,-0.0017,-0.0023,-0.001,0.0625
+unsw_nb15,Hybrid MI-RF (15),5,-0.0009,-0.0016,0.0001,0.1875
+unsw_nb15,MI only (top 30),5,-0.0001,-0.0005,0.0003,1.0
+unsw_nb15,RF only (top 15),5,-0.0014,-0.0023,-0.0002,0.125

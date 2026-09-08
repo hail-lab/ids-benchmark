@@ -1,0 +1,10 @@
+dataset,config,mean_jaccard
+cicids2017,MI only (top 30),0.974
+cicids2017,RF only (top 15),0.868
+cicids2017,Hybrid MI-RF (15),0.912
+ton_iot,MI only (top 30),0.776
+ton_iot,RF only (top 15),0.925
+ton_iot,Hybrid MI-RF (15),0.925
+unsw_nb15,MI only (top 30),1.0
+unsw_nb15,RF only (top 15),0.95
+unsw_nb15,Hybrid MI-RF (15),0.834

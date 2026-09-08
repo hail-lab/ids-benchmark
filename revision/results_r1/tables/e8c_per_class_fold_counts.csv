@@ -1,0 +1,37 @@
+dataset,class_id,class_name,n_total,min_per_fold,max_per_fold,mean_per_fold,unstable
+cicids2017,8,Heartbleed,7,1,2,1.4,True
+cicids2017,13,Web Attack � Sql Injection,15,3,3,3.0,True
+cicids2017,9,Infiltration,24,4,5,4.8,True
+cicids2017,14,Web Attack � XSS,476,95,96,95.2,False
+cicids2017,12,Web Attack � Brute Force,1061,212,213,212.2,False
+cicids2017,1,Bot,1388,277,278,277.6,False
+cicids2017,5,DoS Slowhttptest,3914,782,783,782.8,False
+cicids2017,6,DoS slowloris,4082,816,817,816.4,False
+cicids2017,11,SSH-Patator,4139,827,828,827.8,False
+cicids2017,7,FTP-Patator,5618,1123,1124,1123.6,False
+cicids2017,3,DoS GoldenEye,7303,1460,1461,1460.6,False
+cicids2017,2,DDoS,90463,18092,18093,18092.6,False
+cicids2017,10,PortScan,112350,22470,22470,22470.0,False
+cicids2017,4,DoS Hulk,163153,32630,32631,32630.6,False
+cicids2017,0,BENIGN,1606007,321201,321202,321201.4,False
+ton_iot,4,mitm,1043,208,209,208.6,False
+ton_iot,0,backdoor,20000,4000,4000,4000.0,False
+ton_iot,1,ddos,20000,4000,4000,4000.0,False
+ton_iot,2,dos,20000,4000,4000,4000.0,False
+ton_iot,3,injection,20000,4000,4000,4000.0,False
+ton_iot,6,password,20000,4000,4000,4000.0,False
+ton_iot,7,ransomware,20000,4000,4000,4000.0,False
+ton_iot,8,scanning,20000,4000,4000,4000.0,False
+ton_iot,9,xss,20000,4000,4000,4000.0,False
+ton_iot,5,normal,50000,10000,10000,10000.0,False
+unsw_nb15,9,Worms,138,27,28,27.6,False
+unsw_nb15,2,Backdoors,421,84,85,84.2,False
+unsw_nb15,8,Shellcode,1187,237,238,237.4,False
+unsw_nb15,1,Backdoor,1394,278,279,278.8,False
+unsw_nb15,0,Analysis,2115,423,423,423.0,False
+unsw_nb15,7,Reconnaissance,11085,2217,2217,2217.0,False
+unsw_nb15,3,DoS,12847,2569,2570,2569.4,False
+unsw_nb15,5,Fuzzers,19072,3814,3815,3814.4,False
+unsw_nb15,4,Exploits,35091,7018,7019,7018.2,False
+unsw_nb15,6,Generic,169624,33924,33925,33924.8,False
+unsw_nb15,10,,1747026,349405,349406,349405.2,False

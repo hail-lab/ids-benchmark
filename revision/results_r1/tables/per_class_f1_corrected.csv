@@ -1,0 +1,11 @@
+dataset,class_id,class_name,samples,f1_mean,f1_std
+unsw_nb15,6,Normal,1747026,0.9963,0.0
+unsw_nb15,5,Generic,169624,0.9909,0.0003
+unsw_nb15,3,Exploits,35091,0.7262,0.0028
+unsw_nb15,4,Fuzzers,19072,0.5744,0.0046
+unsw_nb15,2,DoS,12847,0.2028,0.0083
+unsw_nb15,7,Reconnaissance,11085,0.8377,0.0052
+unsw_nb15,0,Analysis,2115,0.0979,0.0142
+unsw_nb15,1,Backdoor,1815,0.1463,0.0129
+unsw_nb15,8,Shellcode,1187,0.6359,0.0289
+unsw_nb15,9,Worms,138,0.5073,0.0996

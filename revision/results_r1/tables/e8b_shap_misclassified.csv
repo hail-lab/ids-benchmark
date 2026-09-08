@@ -1,0 +1,127 @@
+dataset,fold,attack_class,n_class_total,outcome,n_samples,top_features
+ton_iot,1,mitm,1043,correct,169,dns_ra=1.4654; dst_bytes=0.9612; service=0.6900; src_bytes=0.6434; dst_pkts=0.6388
+ton_iot,1,mitm,1043,misclassified,31,dns_ra=0.7850; dst_pkts=0.6580; duration=0.6393; service=0.5540; src_pkts=0.5309
+ton_iot,1,backdoor,20000,correct,165,conn_state=1.3951; duration=1.0030; src_pkts=0.1762; dst_pkts=0.0758; service=0.0423
+ton_iot,1,backdoor,20000,misclassified,35,conn_state=1.0992; duration=0.5031; src_pkts=0.1926; dst_pkts=0.0688; service=0.0295
+ton_iot,1,dos,20000,correct,148,conn_state=1.3833; src_pkts=0.6850; duration=0.5505; dst_pkts=0.2042; dns_ra=0.1842
+ton_iot,1,dos,20000,misclassified,52,conn_state=1.3095; duration=0.3218; src_pkts=0.1836; dns_query=0.0889; dst_pkts=0.0874
+ton_iot,1,ddos,20000,correct,196,conn_state=2.4235; duration=0.6085; dns_rcode=0.5923; src_pkts=0.4855; dns_query=0.4718
+ton_iot,1,ddos,20000,misclassified,4,duration=0.6441; src_pkts=0.4621; conn_state=0.4245; dst_pkts=0.3416; dst_bytes=0.2100
+ton_iot,1,injection,20000,correct,195,src_bytes=2.9172; dst_bytes=1.8765; duration=0.7497; conn_state=0.6944; dst_pkts=0.3060
+ton_iot,1,injection,20000,misclassified,5,src_bytes=0.8603; duration=0.5641; dst_pkts=0.5230; conn_state=0.4292; src_pkts=0.3009
+ton_iot,2,mitm,1043,correct,163,dns_ra=1.5861; dst_bytes=0.9420; dst_pkts=0.7959; src_pkts=0.7253; service=0.7242
+ton_iot,2,mitm,1043,misclassified,37,dns_ra=0.8396; src_pkts=0.5965; dst_pkts=0.5561; src_bytes=0.5430; dst_bytes=0.5421
+ton_iot,2,backdoor,20000,correct,159,conn_state=1.3676; duration=1.0249; src_pkts=0.1816; dst_pkts=0.0882; service=0.0744
+ton_iot,2,backdoor,20000,misclassified,41,conn_state=1.0933; duration=0.4206; src_pkts=0.1783; dst_pkts=0.0684; service=0.0291
+ton_iot,2,dos,20000,correct,143,conn_state=1.4113; src_pkts=0.7758; duration=0.4900; dst_pkts=0.2643; dns_ra=0.1435
+ton_iot,2,dos,20000,misclassified,57,conn_state=1.2565; duration=0.2428; src_pkts=0.1517; dns_query=0.0934; src_bytes=0.0774
+ton_iot,2,ddos,20000,correct,195,conn_state=2.4326; duration=0.7339; src_pkts=0.4899; dns_rcode=0.4572; dns_rejected=0.3939
+ton_iot,2,ddos,20000,misclassified,5,dns_query=0.3808; dns_rejected=0.2837; dst_pkts=0.2835; dns_rd=0.2536; dns_rcode=0.2149
+ton_iot,2,injection,20000,correct,193,src_bytes=3.0282; dst_bytes=1.9464; conn_state=0.6414; duration=0.6143; dst_pkts=0.2800
+ton_iot,2,injection,20000,misclassified,7,src_bytes=1.2280; conn_state=1.0674; dst_bytes=0.6680; duration=0.6057; src_pkts=0.3666
+ton_iot,3,mitm,1043,correct,164,dns_ra=1.3737; dst_bytes=0.9674; src_bytes=0.7567; src_pkts=0.7032; service=0.6850
+ton_iot,3,mitm,1043,misclassified,36,dns_ra=1.0552; dst_bytes=0.6713; dst_pkts=0.5308; src_pkts=0.4930; duration=0.4852
+ton_iot,3,backdoor,20000,correct,164,conn_state=1.4030; duration=1.0027; src_pkts=0.1783; dst_pkts=0.0701; service=0.0243
+ton_iot,3,backdoor,20000,misclassified,36,conn_state=1.0998; duration=0.4549; src_pkts=0.1837; dst_pkts=0.0652; service=0.0250
+ton_iot,3,dos,20000,correct,144,conn_state=1.4206; src_pkts=0.6231; duration=0.5553; dst_pkts=0.2212; dns_ra=0.1495
+ton_iot,3,dos,20000,misclassified,56,conn_state=1.2628; duration=0.3169; src_pkts=0.1502; src_bytes=0.0627; dns_ra=0.0500
+ton_iot,3,ddos,20000,correct,190,conn_state=2.4711; duration=0.6399; dns_rcode=0.5996; src_pkts=0.4983; dns_rejected=0.4614
+ton_iot,3,ddos,20000,misclassified,10,conn_state=0.5390; src_pkts=0.4024; dst_pkts=0.3513; dns_rejected=0.3209; dns_rd=0.3138
+ton_iot,3,injection,20000,correct,193,src_bytes=2.9667; dst_bytes=2.0062; duration=0.7074; conn_state=0.6778; src_pkts=0.2793
+ton_iot,3,injection,20000,misclassified,7,conn_state=1.0693; src_bytes=0.8404; duration=0.3959; src_pkts=0.3730; dst_pkts=0.3130
+ton_iot,4,mitm,1043,correct,169,dns_ra=1.3442; dst_bytes=1.0161; service=0.7426; src_bytes=0.7088; src_pkts=0.5926
+ton_iot,4,mitm,1043,misclassified,31,dns_ra=0.9933; dst_bytes=0.6844; proto=0.6779; duration=0.5272; src_bytes=0.5172
+ton_iot,4,backdoor,20000,correct,163,conn_state=1.3387; duration=1.0020; src_pkts=0.1818; service=0.0965; dst_pkts=0.0949
+ton_iot,4,backdoor,20000,misclassified,37,conn_state=1.0619; duration=0.4865; src_pkts=0.1856; dst_pkts=0.0661; service=0.0298
+ton_iot,4,dos,20000,correct,137,conn_state=1.4193; src_pkts=0.6950; duration=0.5106; dst_pkts=0.2136; dns_ra=0.1361
+ton_iot,4,dos,20000,misclassified,63,conn_state=1.2732; duration=0.2475; src_pkts=0.1803; src_bytes=0.0786; dst_pkts=0.0710
+ton_iot,4,ddos,20000,correct,197,conn_state=2.3922; duration=0.6915; dns_rcode=0.5643; dns_rejected=0.4957; dns_query=0.4795
+ton_iot,4,ddos,20000,misclassified,3,duration=0.5532; conn_state=0.5011; dst_pkts=0.3596; dns_rd=0.2114; src_pkts=0.2102
+ton_iot,4,injection,20000,correct,196,src_bytes=2.9351; dst_bytes=1.9603; conn_state=0.6864; duration=0.6468; src_pkts=0.2680
+ton_iot,4,injection,20000,misclassified,4,conn_state=1.3191; src_bytes=1.0420; duration=0.7797; src_pkts=0.5890; dst_pkts=0.2371
+ton_iot,5,mitm,1043,correct,174,dns_ra=1.5498; dst_bytes=0.8842; src_bytes=0.7720; src_pkts=0.6998; service=0.6283
+ton_iot,5,mitm,1043,misclassified,26,dns_ra=0.9645; duration=0.8132; dst_bytes=0.6928; src_bytes=0.5622; dst_pkts=0.3987
+ton_iot,5,backdoor,20000,correct,166,conn_state=1.3831; duration=0.9317; src_pkts=0.1736; dst_pkts=0.0779; service=0.0615
+ton_iot,5,backdoor,20000,misclassified,34,conn_state=1.0867; duration=0.5540; src_pkts=0.1825; dst_pkts=0.0686; service=0.0300
+ton_iot,5,dos,20000,correct,147,conn_state=1.4372; src_pkts=0.7555; duration=0.5263; dst_pkts=0.2676; dns_ra=0.1757
+ton_iot,5,dos,20000,misclassified,53,conn_state=1.2892; duration=0.2189; src_pkts=0.1501; src_bytes=0.0702; dns_query=0.0545
+ton_iot,5,ddos,20000,correct,193,conn_state=2.4183; duration=0.7553; src_pkts=0.5211; dns_rcode=0.5063; dns_query=0.3969
+ton_iot,5,ddos,20000,misclassified,7,dst_pkts=0.5217; dns_rd=0.2827; duration=0.2650; src_pkts=0.2619; dns_query=0.2490
+ton_iot,5,injection,20000,correct,193,src_bytes=3.0692; dst_bytes=1.8270; duration=0.7520; conn_state=0.6312; dst_pkts=0.3126
+ton_iot,5,injection,20000,misclassified,7,src_bytes=0.9032; conn_state=0.6836; dst_pkts=0.5287; src_pkts=0.4045; duration=0.2962
+unsw_nb15,1,Worms,138,correct,13,smeansz=1.9087; tcprtt=1.5888; dttl=1.1665; synack=1.0473; sbytes=0.8740
+unsw_nb15,1,Worms,138,misclassified,14,smeansz=1.7333; tcprtt=1.2250; synack=0.7282; dttl=0.6942; sbytes=0.6670
+unsw_nb15,1,Shellcode,1187,correct,126,sttl=1.5631; ct_dst_src_ltm=1.3783; smeansz=1.1597; sbytes=0.7660; ackdat=0.3940
+unsw_nb15,1,Shellcode,1187,misclassified,74,smeansz=0.7192; ackdat=0.6734; ct_dst_src_ltm=0.6704; sttl=0.6656; sbytes=0.4896
+unsw_nb15,1,Backdoor,1815,correct,19,dmeansz=1.7301; smeansz=1.1787; service=0.9921; ct_state_ttl=0.6958; sttl=0.6955
+unsw_nb15,1,Backdoor,1815,misclassified,181,proto=1.1666; sttl=0.5825; ct_state_ttl=0.4780; service=0.2729; sbytes=0.2355
+unsw_nb15,1,Analysis,2115,correct,10,tcprtt=1.2967; ct_flw_http_mthd=1.0507; sttl=0.9189; res_bdy_len=0.5810; dmeansz=0.4395
+unsw_nb15,1,Analysis,2115,misclassified,190,proto=0.9496; sttl=0.7965; smeansz=0.4882; ct_state_ttl=0.3306; tcprtt=0.1995
+unsw_nb15,1,Reconnaissance,11085,correct,160,sbytes=2.3869; sttl=1.8563; smeansz=1.0128; dttl=0.8993; ct_dst_src_ltm=0.5246
+unsw_nb15,1,Reconnaissance,11085,misclassified,40,sttl=0.8949; sbytes=0.4051; ct_state_ttl=0.3683; service=0.2588; ct_dst_src_ltm=0.2441
+unsw_nb15,2,Worms,138,correct,11,dttl=1.7613; smeansz=1.5061; synack=1.2958; sbytes=1.1877; sttl=0.9554
+unsw_nb15,2,Worms,138,misclassified,16,sbytes=0.8537; sttl=0.8316; dttl=0.8305; smeansz=0.7884; service=0.6806
+unsw_nb15,2,Shellcode,1187,correct,137,sttl=1.4616; smeansz=1.3003; ct_dst_src_ltm=1.2896; sbytes=0.8154; service=0.4354
+unsw_nb15,2,Shellcode,1187,misclassified,63,smeansz=0.7424; ct_dst_src_ltm=0.6371; sttl=0.6265; service=0.4665; ackdat=0.4608
+unsw_nb15,2,Backdoor,1815,correct,13,dmeansz=1.8912; smeansz=1.0299; sttl=0.8315; ct_state_ttl=0.5443; ct_dst_src_ltm=0.4510
+unsw_nb15,2,Backdoor,1815,misclassified,187,proto=1.0649; sttl=0.6482; ct_state_ttl=0.5253; sbytes=0.2918; service=0.2575
+unsw_nb15,2,Analysis,2115,correct,8,tcprtt=1.5486; ct_flw_http_mthd=1.4148; res_bdy_len=0.6074; sttl=0.5382; ct_state_ttl=0.4709
+unsw_nb15,2,Analysis,2115,misclassified,192,proto=1.1927; ct_state_ttl=0.5918; smeansz=0.4620; sttl=0.4512; ct_ftp_cmd=0.1378
+unsw_nb15,2,Reconnaissance,11085,correct,143,sbytes=2.2762; sttl=1.6584; dttl=1.0422; smeansz=1.0089; ct_dst_src_ltm=0.4900
+unsw_nb15,2,Reconnaissance,11085,misclassified,57,sttl=0.9009; ct_state_ttl=0.3700; sbytes=0.3026; ct_dst_src_ltm=0.2757; service=0.2561
+unsw_nb15,3,Worms,138,correct,11,synack=1.6467; dttl=1.4089; smeansz=1.2371; sbytes=1.1091; service=0.8052
+unsw_nb15,3,Worms,138,misclassified,17,smeansz=1.1594; synack=1.1031; sbytes=1.0336; dttl=0.7791; service=0.6087
+unsw_nb15,3,Shellcode,1187,correct,145,ct_dst_src_ltm=1.2452; sttl=1.1981; smeansz=1.0822; sbytes=0.9984; ct_state_ttl=0.5799
+unsw_nb15,3,Shellcode,1187,misclassified,55,smeansz=0.6180; ct_dst_src_ltm=0.6134; sjit=0.5905; dttl=0.5803; ct_state_ttl=0.4926
+unsw_nb15,3,Backdoor,1815,correct,19,dmeansz=1.5459; smeansz=1.1474; service=0.8558; sttl=0.6864; ct_state_ttl=0.5150
+unsw_nb15,3,Backdoor,1815,misclassified,181,proto=1.1332; sttl=0.6369; ct_state_ttl=0.4315; service=0.2607; smeansz=0.2370
+unsw_nb15,3,Analysis,2115,correct,9,ct_flw_http_mthd=1.5018; tcprtt=1.3735; sttl=0.7254; res_bdy_len=0.7230; ct_state_ttl=0.4637
+unsw_nb15,3,Analysis,2115,misclassified,191,proto=1.1772; sttl=0.5974; ct_state_ttl=0.4868; smeansz=0.4755; tcprtt=0.1815
+unsw_nb15,3,Reconnaissance,11085,correct,162,sbytes=2.4481; sttl=1.8876; smeansz=0.9505; dttl=0.8777; ct_dst_src_ltm=0.5863
+unsw_nb15,3,Reconnaissance,11085,misclassified,38,sttl=0.9086; ct_state_ttl=0.3538; sbytes=0.3452; ct_dst_src_ltm=0.2927; proto=0.2592
+unsw_nb15,4,Worms,138,correct,14,dttl=2.0094; smeansz=1.6488; synack=1.0679; sbytes=0.8560; sttl=0.7464
+unsw_nb15,4,Worms,138,misclassified,14,dttl=1.7113; smeansz=1.2610; synack=1.0455; service=0.7032; sttl=0.6247
+unsw_nb15,4,Shellcode,1187,correct,139,ct_dst_src_ltm=1.1935; sttl=1.1736; smeansz=1.0981; sbytes=1.0329; ct_state_ttl=0.5187
+unsw_nb15,4,Shellcode,1187,misclassified,61,smeansz=0.6535; sjit=0.5752; dttl=0.5698; ct_dst_src_ltm=0.5193; ct_state_ttl=0.4799
+unsw_nb15,4,Backdoor,1815,correct,17,dmeansz=1.4575; smeansz=1.3073; sttl=0.7846; dloss=0.6388; ct_state_ttl=0.5723
+unsw_nb15,4,Backdoor,1815,misclassified,183,proto=1.1546; sttl=0.6670; ct_state_ttl=0.4403; service=0.2668; smeansz=0.2109
+unsw_nb15,4,Analysis,2115,correct,8,ct_flw_http_mthd=1.5230; tcprtt=1.4689; sttl=0.8322; res_bdy_len=0.4600; dmeansz=0.3799
+unsw_nb15,4,Analysis,2115,misclassified,192,proto=1.0591; sttl=0.7050; smeansz=0.5389; ct_state_ttl=0.3714; tcprtt=0.2226
+unsw_nb15,4,Reconnaissance,11085,correct,159,sbytes=2.3791; sttl=1.7981; smeansz=1.0146; dttl=0.9519; ct_dst_src_ltm=0.5184
+unsw_nb15,4,Reconnaissance,11085,misclassified,41,sttl=0.8697; ct_state_ttl=0.3572; service=0.3492; smeansz=0.3294; sbytes=0.3031
+unsw_nb15,5,Worms,138,correct,12,smeansz=1.9042; synack=1.8005; tcprtt=1.0726; sbytes=0.9486; dttl=0.8995
+unsw_nb15,5,Worms,138,misclassified,16,synack=1.5914; smeansz=1.3094; sbytes=1.1725; tcprtt=0.7781; dttl=0.7234
+unsw_nb15,5,Shellcode,1187,correct,138,sttl=1.6001; ct_dst_src_ltm=1.3108; smeansz=1.2266; sbytes=0.5772; ct_state_ttl=0.4322
+unsw_nb15,5,Shellcode,1187,misclassified,62,sttl=0.7094; ct_dst_src_ltm=0.7033; smeansz=0.6800; service=0.4788; ackdat=0.4309
+unsw_nb15,5,Backdoor,1815,correct,22,dmeansz=1.8001; smeansz=1.4057; ct_dst_src_ltm=0.5952; sttl=0.5809; ct_state_ttl=0.4303
+unsw_nb15,5,Backdoor,1815,misclassified,178,proto=1.3283; sttl=0.5375; ct_state_ttl=0.4729; service=0.2414; sbytes=0.2171
+unsw_nb15,5,Analysis,2115,correct,10,res_bdy_len=1.1530; ct_flw_http_mthd=1.0990; tcprtt=0.9927; dmeansz=0.6961; ct_state_ttl=0.6633
+unsw_nb15,5,Analysis,2115,misclassified,190,proto=1.1331; ct_state_ttl=0.6061; smeansz=0.4703; sttl=0.4452; tcprtt=0.2000
+unsw_nb15,5,Reconnaissance,11085,correct,155,sbytes=2.3690; sttl=1.7608; dttl=0.9721; smeansz=0.8463; ct_dst_src_ltm=0.4839
+unsw_nb15,5,Reconnaissance,11085,misclassified,45,sttl=0.8872; ct_state_ttl=0.3655; sbytes=0.3087; service=0.2518; ct_dst_src_ltm=0.2496
+cicids2017,1,Infiltration,24,correct,3,bwd_packet_length_mean=1.5131; act_data_pkt_fwd=1.2030; fwd_packet_length_mean=0.8558; bwd_iat_min=0.8313; fwd_packet_length_std=0.8109
+cicids2017,1,Infiltration,24,misclassified,2,act_data_pkt_fwd=1.2957; bwd_packet_length_mean=1.1033; fwd_packet_length_mean=0.9131; active_min=0.8410; min_packet_length=0.7521
+cicids2017,1,Web Attack - XSS,476,correct,26,init_win_bytes_backward=5.9141; fwd_iat_min=2.4497; flow_iat_min=1.9710; fwd_iat_max=0.1440; flow_iat_max=0.1214
+cicids2017,1,Web Attack - XSS,476,misclassified,57,init_win_bytes_backward=5.7424; fwd_iat_min=2.3412; flow_iat_min=1.5212; fwd_iat_max=0.1653; init_win_bytes_forward=0.1536
+cicids2017,1,Web Attack - Brute Force,1061,correct,141,init_win_bytes_backward=6.2171; flow_iat_min=2.7916; fwd_iat_min=0.9030; fwd_iat_std=0.2335; max_packet_length=0.2167
+cicids2017,1,Web Attack - Brute Force,1061,misclassified,30,init_win_bytes_backward=5.4063; flow_iat_min=2.2093; fwd_iat_min=0.6448; urg_flag_count=0.5423; init_win_bytes_forward=0.4275
+cicids2017,2,Infiltration,24,correct,4,bwd_packet_length_mean=1.9365; act_data_pkt_fwd=1.6799; bwd_iat_min=0.8490; fwd_packet_length_mean=0.8268; fwd_packet_length_std=0.8197
+cicids2017,2,Infiltration,24,misclassified,1,init_win_bytes_forward=1.2035; min_packet_length=0.9434; fwd_iat_min=0.7766; average_packet_size=0.6626; bwd_packet_length_mean=0.6603
+cicids2017,2,Web Attack - XSS,476,correct,19,init_win_bytes_backward=5.5391; fwd_iat_min=2.2897; flow_iat_min=2.0304; fwd_iat_std=0.2723; bwd_packets/s=0.1293
+cicids2017,2,Web Attack - XSS,476,misclassified,63,init_win_bytes_backward=5.5008; fwd_iat_min=2.3020; flow_iat_min=1.5512; init_win_bytes_forward=0.2941; fwd_iat_std=0.2428
+cicids2017,2,Web Attack - Brute Force,1061,correct,147,init_win_bytes_backward=5.9082; flow_iat_min=2.8827; fwd_iat_min=0.7661; bwd_packets/s=0.2874; urg_flag_count=0.2804
+cicids2017,2,Web Attack - Brute Force,1061,misclassified,26,init_win_bytes_backward=6.8105; flow_iat_min=3.0953; fwd_iat_min=0.6384; bwd_packets/s=0.1667; max_packet_length=0.1458
+cicids2017,3,Infiltration,24,correct,3,bwd_packet_length_mean=1.4234; act_data_pkt_fwd=1.1353; fwd_packet_length_max=0.8524; init_win_bytes_forward=0.7753; fwd_packet_length_mean=0.7729
+cicids2017,3,Infiltration,24,misclassified,2,act_data_pkt_fwd=1.2282; bwd_packet_length_mean=1.0458; fwd_iat_min=0.8736; min_packet_length=0.8693; init_win_bytes_forward=0.6765
+cicids2017,3,Web Attack - XSS,476,correct,24,init_win_bytes_backward=5.7479; fwd_iat_min=2.3081; flow_iat_min=2.0264; fwd_iat_std=0.3252; flow_iat_max=0.1225
+cicids2017,3,Web Attack - XSS,476,misclassified,58,init_win_bytes_backward=5.5292; fwd_iat_min=2.2387; flow_iat_min=1.5090; fwd_iat_std=0.2977; fwd_iat_total=0.1353
+cicids2017,3,Web Attack - Brute Force,1061,correct,140,init_win_bytes_backward=5.8062; flow_iat_min=2.5769; fwd_iat_min=0.8481; init_win_bytes_forward=0.2819; max_packet_length=0.2789
+cicids2017,3,Web Attack - Brute Force,1061,misclassified,29,init_win_bytes_backward=6.0254; flow_iat_min=2.3635; fwd_iat_min=0.7863; urg_flag_count=0.3669; init_win_bytes_forward=0.2832
+cicids2017,4,Web Attack - XSS,476,correct,31,init_win_bytes_backward=5.8561; flow_iat_min=3.4473; fwd_iat_min=0.8243; flow_iat_max=0.1829; fwd_iat_std=0.1671
+cicids2017,4,Web Attack - XSS,476,misclassified,58,init_win_bytes_backward=5.4426; flow_iat_min=2.8726; fwd_iat_min=0.8500; init_win_bytes_forward=0.2095; flow_iat_max=0.1735
+cicids2017,4,Web Attack - Brute Force,1061,correct,145,init_win_bytes_backward=5.7615; flow_iat_min=3.0466; fwd_iat_min=0.7975; fwd_header_length=0.1981; bwd_packets/s=0.1945
+cicids2017,4,Web Attack - Brute Force,1061,misclassified,28,init_win_bytes_backward=6.3444; flow_iat_min=2.9759; fwd_iat_min=0.6417; max_packet_length=0.1212; fwd_iat_std=0.1199
+cicids2017,5,Web Attack - XSS,476,correct,32,init_win_bytes_backward=5.6729; fwd_iat_min=2.2725; flow_iat_min=1.9730; fwd_iat_std=0.2559; fwd_iat_total=0.1518
+cicids2017,5,Web Attack - XSS,476,misclassified,51,init_win_bytes_backward=5.7932; fwd_iat_min=2.3279; flow_iat_min=1.5194; fwd_iat_std=0.2507; fwd_iat_total=0.1453
+cicids2017,5,Web Attack - Brute Force,1061,correct,142,init_win_bytes_backward=6.0650; flow_iat_min=3.0976; fwd_iat_min=0.8401; fwd_header_length=0.1974; bwd_packets/s=0.1888
+cicids2017,5,Web Attack - Brute Force,1061,misclassified,40,init_win_bytes_backward=5.7966; flow_iat_min=2.6305; fwd_iat_min=0.6466; urg_flag_count=0.5136; init_win_bytes_forward=0.4052
