@@ -35,6 +35,9 @@ exists.
 `recompute_perclass.py` regenerates the per-class F1 table on the corrected
 labels.
 
+`plot_e1_splits.py` draws the partitioning-scheme figure from
+`e1_split_schemes.csv`.
+
 ## Running
 
 Datasets are not included (see the repository `.gitignore`); obtain them from
