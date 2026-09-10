@@ -35,8 +35,32 @@ exists.
 `recompute_perclass.py` regenerates the per-class F1 table on the corrected
 labels.
 
+`recompute_unsw_multi.py` re-runs the UNSW-NB15 multi-class benchmark for all
+eight models on the merged labels, since the submitted table described an
+11-class task. `merge_corrected_benchmark.py` splices that block into the
+benchmark table and recomputes Kendall's W and the pairwise effect sizes, which
+were derived from the stale version. `emit_corrected_tables.py` prints the
+resulting LaTeX table bodies.
+
+`compare_bilstm_device.py` reproduces one BiLSTM fold with the device as the
+only change, holding architecture, split, scaling, schedule and seed fixed. It
+measures a CPU-to-GPU difference of 0.021 macro F1, which is why the refit was
+run on CPU despite costing 6.3 hours per fold, and which the manuscript cites
+when qualifying the BiLSTM tuning gain.
+
 `plot_e1_splits.py` draws the partitioning-scheme figure from
-`e1_split_schemes.csv`.
+`e1_split_schemes.csv`; `plot_e3_ablation.py` redraws the feature-selection
+ablation from the in-fold results; `plot_confusion_corrected.py` redraws the
+CICIDS2017 and UNSW-NB15 confusion matrices on the corrected labels.
+
+## Verification
+
+`verify_manuscript_tables.py` recomputes every cell of every results table in
+the manuscript from these CSVs and compares it against the value printed in
+`main.tex` (304 comparisons). It exists because two errors found during the
+pre-submission audit were of exactly this kind: a mean taken over two of three
+folds, and a table that had not been regenerated after its experiment was
+re-run. Run it after changing either the results or the manuscript.
 
 ## Running
 

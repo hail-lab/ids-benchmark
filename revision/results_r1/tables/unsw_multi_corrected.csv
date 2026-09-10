@@ -1,0 +1,9 @@
+accuracy,accuracy_std,balanced_accuracy,balanced_accuracy_std,precision_macro,precision_macro_std,recall_macro,recall_macro_std,f1_macro,f1_macro_std,roc_auc,roc_auc_std,pr_auc,pr_auc_std,fit_seconds,fit_seconds_std,model,dataset,task,n_folds,n_classes,labels,note
+0.9812,0.0001,0.5513,0.0055,0.7562,0.0167,0.5513,0.0055,0.5745,0.0086,0.9969,0.0001,,,45.66,1.8469,XGBoost,unsw_nb15,multi,5,10,corrected (Backdoor merged),
+0.9815,0.0001,0.5434,0.0076,0.7207,0.0262,0.5434,0.0076,0.5731,0.0105,0.9906,0.0012,,,130.93,5.5485,RandomForest,unsw_nb15,multi,5,10,corrected (Backdoor merged),
+0.9754,0.0046,0.474,0.0489,0.4829,0.0538,0.474,0.0489,0.4685,0.0482,0.8745,0.0884,,,170.7,8.0579,LightGBM,unsw_nb15,multi,5,10,corrected (Backdoor merged),LightGBM refitted on CPU (GPU histogram builder aborts)
+0.9685,0.0001,0.3047,0.0045,0.3013,0.0288,0.3047,0.0045,0.2843,0.0041,0.989,0.0008,,,197.116,18.5872,SVM,unsw_nb15,multi,5,10,corrected (Backdoor merged),
+0.9696,0.0002,0.3855,0.0055,0.4333,0.0111,0.3855,0.0055,0.3927,0.0055,0.8042,0.0048,,,26.614,2.6573,kNN,unsw_nb15,multi,5,10,corrected (Backdoor merged),
+0.9786,0.0003,0.4569,0.0088,0.6386,0.0464,0.4569,0.0088,0.4717,0.0137,0.9963,0.0001,,,2382.882,1211.0052,MLP,unsw_nb15,multi,5,10,corrected (Backdoor merged),
+0.9612,0.0013,0.6235,0.0113,0.4317,0.0077,0.6235,0.0113,0.4449,0.0086,0.9941,0.0004,,,1017.182,123.9422,CNN1D,unsw_nb15,multi,5,10,corrected (Backdoor merged),
+0.9659,0.0016,0.6601,0.0258,0.4558,0.0074,0.6601,0.0258,0.4769,0.0177,0.9954,0.0004,,,22721.954,272.9366,BiLSTM,unsw_nb15,multi,5,10,corrected (Backdoor merged),
