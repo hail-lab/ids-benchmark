@@ -1,4 +1,4 @@
-# Failure Modes in Machine Learning-Based Intrusion Detection: Leakage Inflation, Multi-Class Collapse, and Dataset-Specific Feature Dependence
+# Failure Modes in Machine Learning-Based Intrusion Detection: Partitioning Inflation, Identifier Leakage, Multi-Class Collapse, and Dataset-Specific Feature Dependence
 
 ## Overview
 
@@ -12,8 +12,8 @@ study isolates and quantifies three reproducible failure modes that distort
 headline IDS performance numbers reported in the literature.
 
 **Paper:** *Failure Modes in Machine Learning-Based Intrusion Detection:
-Leakage Inflation, Multi-Class Collapse, and Dataset-Specific Feature
-Dependence* - submitted to *Heliyon*.
+Partitioning Inflation, Identifier Leakage, Multi-Class Collapse, and
+Dataset-Specific Feature Dependence* - under revision at *Heliyon*.
 
 **Authors:** S. Aljaloud and A. Alshammari, University of Ha'il, Saudi Arabia.
 
@@ -23,9 +23,10 @@ Dependence* - submitted to *Heliyon*.
 
 | Failure Mode | Key Result |
 |---|---|
-| **Failure Mode I - Identifier Leakage Inflation** | Median absolute F1 inflation 0.018 (binary), 0.092 (multi-class); max 0.39 absolute (68% relative; k-NN on ToN-IoT multi-class); dose-response with identifier richness |
-| **Failure Mode II - Multi-Class Collapse** | LightGBM CICIDS2017: F1 = 0.998 (binary) -> 0.197 (multi-class); replicated across 3 alternative configurations |
-| **Failure Mode III - No Universal Feature Set** | Disjoint top-20 SHAP rankings across datasets: TCP window features (CICIDS2017), Zeek metadata (ToN-IoT), TTL-based features (UNSW-NB15) |
+| **Failure Mode I - Partitioning Inflation** | Day- or host-grouped cross-validation cuts macro F1 from 0.998 to 0.491 (CICIDS2017) and 0.997 to 0.838 (ToN-IoT); UNSW-NB15 barely moves, so the effect must be measured per dataset |
+| **Failure Mode II - Identifier Leakage** | *Mean* absolute F1 inflation 0.018 (binary), 0.092 (multi-class) -- medians 0.003 and 0.020, so the distribution is strongly skewed; max 0.39 absolute (68% relative; k-NN on ToN-IoT multi-class) |
+| **Failure Mode III - Multi-Class Collapse** | LightGBM CICIDS2017: F1 = 0.998 (binary) -> 0.197 (multi-class); a default-configuration hazard -- one-vs-all with balanced class weights repairs it to 0.871 |
+| **Failure Mode IV - Detection Does Not Transfer** | On a shared 13-feature schema, within-dataset macro F1 of 0.971 falls to 0.355 across datasets at chance-level balanced accuracy; per-class SHAP rankings remain disjoint |
 | **Feature-Selection Ablation** | 80% feature reduction with < 0.4% F1 loss across all datasets |
 | **Friedman / Nemenyi** | Tree ensembles dominate the configuration tested; the gap to deep models is configuration-dependent and reported as a secondary observation |
 
@@ -212,8 +213,8 @@ If you use this code or build on the failure-mode audit, please cite:
 ```bibtex
 @article{aljaloud2026failuremodes,
   title   = {Failure Modes in Machine Learning-Based Intrusion Detection:
-             Leakage Inflation, Multi-Class Collapse, and Dataset-Specific
-             Feature Dependence},
+             Partitioning Inflation, Identifier Leakage, Multi-Class
+             Collapse, and Dataset-Specific Feature Dependence},
   author  = {Aljaloud, Saud and Alshammari, Abdullah},
   journal = {Heliyon},
   year    = {2026},
