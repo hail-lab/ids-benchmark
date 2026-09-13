@@ -403,10 +403,68 @@ def check_dltuning():
         failures.append(f"tab:dltuning: parsed {hits} rows, expected 4")
 
 
+# ---------------------------------------------------------------- Table 9
+def check_subsample():
+    """Subsample / iteration-budget study, scikit-learn.
+
+    Rows are keyed by (model, config, intended cap). The cap matters for k-NN,
+    whose three sizes are three experiments, but must not be taken from the
+    raw n_train for LinearSVC, whose folds differ by the remainder of an
+    integer split -- grouping on that produced a mean over two of three folds
+    in the superseded table.
+    """
+    src = TABLES / "e5_subsample_curve_sklearn.csv"
+    if not src.exists():
+        failures.append("tab:subsample: scikit-learn results missing")
+        return
+    d = pd.read_csv(src)
+    caps = (50_000, 100_000, 200_000)
+    d["cap"] = d.n_train.map(lambda n: next((c for c in caps if n == c), "full"))
+    g = d.groupby(["dataset", "model", "config", "cap"]).agg(
+        f1=("f1_macro", "mean"), conv=("converged", "all"))
+
+    ds_order = ["cicids2017", "unsw_nb15"]
+    idx = -1
+    hits = 0
+    for line in body("tab:subsample").split("\n"):
+        c = cells(line)
+        if len(c) < 5:
+            continue
+        name, rows_txt = c[1], c[2]
+        if "k-NN" in name:
+            model, config = "kNN", "k5"
+        elif "LinearSVC" in name:
+            model, config = "LinearSVC", "linear"
+        elif "max_iter" in name or "max\\_iter" in name:
+            model = "SVM"
+            tail = name.split("=")[-1].strip()
+            budget = "50000" if tail.startswith("50000") else "5000"
+            config = f"rbf_maxiter{budget}"
+        else:
+            continue
+        if model == "kNN" and num(rows_txt) == 50_000:
+            idx += 1                       # first row of a dataset block
+        ds = ds_order[max(idx, 0)]
+
+        n = num(rows_txt)
+        cap = "full" if model == "LinearSVC" else int(n)
+        if model == "SVM" and cap == 100_000:
+            config = "rbf_maxiter5000_100k"
+        key = (ds, model, config, cap)
+        if key not in g.index:
+            failures.append(f"tab:subsample: no CSV row for {key}")
+            continue
+        eq("tab:subsample", f"{ds}/{model}/{config}/{cap}", num(c[3]),
+           float(g.loc[key, "f1"]))
+        hits += 1
+    if hits != 14:
+        failures.append(f"tab:subsample: parsed {hits} rows, expected 14")
+
+
 CHECKS = [check_splits, check_lgbmsens, check_imbalance, check_latency,
           check_ablation, check_transfer, check_foldcounts,
           check_binary_results, check_multi_results, check_degradation,
-          check_fttransformer, check_dltuning]
+          check_fttransformer, check_dltuning, check_subsample]
 
 
 if __name__ == "__main__":

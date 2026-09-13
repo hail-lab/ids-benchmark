@@ -48,6 +48,13 @@ measures a CPU-to-GPU difference of 0.021 macro F1, which is why the refit was
 run on CPU despite costing 6.3 hours per fold, and which the manuscript cites
 when qualifying the BiLSTM tuning gain.
 
+`rerun_leakage_unsw_multi.py` and `replot_leakage_unsw.py` redo the UNSW-NB15
+multi-class leakage arm on the merged labels and rebuild the figure and the
+aggregate inflation statistics. `replot_benchmark_figures.py` redraws the
+three benchmark figures that plot UNSW-NB15 multi-class F1, including the
+critical-difference diagram, whose title carried the superseded Friedman
+statistics.
+
 `plot_e1_splits.py` draws the partitioning-scheme figure from
 `e1_split_schemes.csv`; `plot_e3_ablation.py` redraws the feature-selection
 ablation from the in-fold results; `plot_confusion_corrected.py` redraws the
@@ -57,10 +64,15 @@ CICIDS2017 and UNSW-NB15 confusion matrices on the corrected labels.
 
 `verify_manuscript_tables.py` recomputes every cell of every results table in
 the manuscript from these CSVs and compares it against the value printed in
-`main.tex` (304 comparisons). It exists because two errors found during the
-pre-submission audit were of exactly this kind: a mean taken over two of three
-folds, and a table that had not been regenerated after its experiment was
-re-run. Run it after changing either the results or the manuscript.
+`main.tex` (318 comparisons). It exists because several errors found during
+the pre-submission audit were of exactly this kind: a mean taken over two of
+three folds, and a table that had not been regenerated after its experiment
+was re-run. Run it after changing either the results or the manuscript.
+
+`../results_r1/provenance_manifest.json` records which files feed which table.
+A table whose sources were produced in different environments compares an
+implementation difference as though it were a result, which is what happened
+to the subsample study below; `_paper_tools/check_provenance.py` checks it.
 
 ## Running
 
@@ -84,6 +96,12 @@ Google Colab instead, for machines without a local CUDA device.
 
 All experiments use a fixed seed (42). Every script skips work already recorded
 in its output CSV, so interrupted runs resume rather than restart. Fits that
-depend on an iteration budget record whether they converged, after an earlier
-version of the subsample experiment produced a result that turned out to be
-iteration starvation rather than an effect of training-set size.
+depend on an iteration budget record whether they converged.
+
+`e5_subsample_curve.csv` is retained as a superseded artifact. It was produced
+on Colab with cuML while the benchmark it was compared against used
+scikit-learn, and the two differ by up to 0.11 macro F1 in how far short of
+convergence they stop -- which led us to report a correction to the submitted
+SVM figure that was not warranted. `rerun_subsample_sklearn.py` redoes the
+study on scikit-learn and `e5_subsample_curve_sklearn.csv` is what the
+manuscript now reports; both are released.

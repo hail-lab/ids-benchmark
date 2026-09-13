@@ -1,0 +1,65 @@
+{
+  "_comment": "Which results files feed each table. A table whose sources disagree on environment compares an implementation difference as though it were a result. Checked by _paper_tools/check_provenance.py.",
+  "Table 4 (binary results)": [
+    "benchmark_results.csv"
+  ],
+  "Table 5 (multi-class results)": [
+    "benchmark_results_corrected.csv"
+  ],
+  "Table 6 (partitioning schemes)": [
+    "e1_split_schemes.csv"
+  ],
+  "Table 7 (binary-to-multi degradation)": [
+    "benchmark_results_corrected.csv"
+  ],
+  "Table 8 (LightGBM sensitivity)": [
+    "e4_lgbm_sensitivity.csv"
+  ],
+  "Table 9 (subsample / iteration budget)": [
+    "e5_subsample_curve_sklearn.csv"
+  ],
+  "Table 10 (imbalance handling)": [
+    "e5_class_weight.csv"
+  ],
+  "Table 11 (FT-Transformer)": [
+    "e7_ft_transformer.csv",
+    "benchmark_results_corrected.csv"
+  ],
+  "Table 12 (deep-model tuning)": [
+    "e6_dl_tuned_folds.csv",
+    "benchmark_results_corrected.csv"
+  ],
+  "Table 13 (training efficiency)": [
+    "benchmark_results.csv"
+  ],
+  "Table 14 (inference latency)": [
+    "e8a_inference_latency.csv"
+  ],
+  "Table 15 (feature-selection ablation)": [
+    "e3_nested_fs.csv",
+    "e3_selection_stability.csv"
+  ],
+  "Table 16 (cross-dataset transfer)": [
+    "e2_cross_dataset_transfer.csv"
+  ],
+  "Tables 17-19 (per-class F1)": [
+    "per_class_f1_corrected.csv"
+  ],
+  "Table 20 (per-fold class counts)": [
+    "e8c_per_class_fold_counts.csv"
+  ],
+  "Figure 5 (partitioning)": [
+    "e1_split_schemes.csv"
+  ],
+  "Figures 2-4 (leakage)": [
+    "leakage_comparison_corrected.csv"
+  ],
+  "Figure 10 (critical difference)": [
+    "benchmark_results_corrected.csv"
+  ],
+  "Statistical tests": [
+    "e8c_kendalls_w.csv",
+    "e8c_pairwise_effects.csv"
+  ],
+  "_superseded": "e5_subsample_curve.csv is the earlier cuML run, retained as the evidence behind the cross-implementation disclosure in Section 4.7.1. It no longer feeds any table."
+}
