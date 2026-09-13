@@ -24,7 +24,7 @@ Dataset-Specific Feature Dependence* - under revision at *Heliyon*.
 | Failure Mode | Key Result |
 |---|---|
 | **Failure Mode I - Partitioning Inflation** | Day- or host-grouped cross-validation cuts macro F1 from 0.998 to 0.491 (CICIDS2017) and 0.997 to 0.838 (ToN-IoT); UNSW-NB15 barely moves, so the effect must be measured per dataset |
-| **Failure Mode II - Identifier Leakage** | *Mean* absolute F1 inflation 0.018 (binary), 0.092 (multi-class) -- medians 0.003 and 0.020, so the distribution is strongly skewed; max 0.39 absolute (68% relative; k-NN on ToN-IoT multi-class) |
+| **Failure Mode II - Identifier Leakage** | *Mean* absolute F1 inflation 0.018 (binary), 0.094 (multi-class) -- medians 0.003 and 0.022, so the distribution is strongly skewed; max 0.39 absolute (68% relative; k-NN on ToN-IoT multi-class) |
 | **Failure Mode III - Multi-Class Collapse** | LightGBM CICIDS2017: F1 = 0.998 (binary) -> 0.197 (multi-class); a default-configuration hazard -- one-vs-all with balanced class weights repairs it to 0.871 |
 | **Failure Mode IV - Detection Does Not Transfer** | On a shared 13-feature schema, within-dataset macro F1 of 0.971 falls to 0.355 across datasets at chance-level balanced accuracy; per-class SHAP rankings remain disjoint |
 | **Feature-Selection Ablation** | 80% feature reduction with < 0.4% F1 loss across all datasets |

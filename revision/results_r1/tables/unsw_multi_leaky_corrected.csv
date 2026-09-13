@@ -1,0 +1,6 @@
+accuracy,accuracy_std,balanced_accuracy,balanced_accuracy_std,precision_macro,precision_macro_std,recall_macro,recall_macro_std,f1_macro,f1_macro_std,roc_auc,roc_auc_std,pr_auc,pr_auc_std,fit_seconds,fit_seconds_std,model,dataset,task,n_folds,arm,n_features,n_classes
+0.9717,0.0002,0.3983,0.0032,0.4716,0.0096,0.3983,0.0032,0.41,0.0055,0.8066,0.005,,,28.504,3.2924,kNN,unsw_nb15,multi,5,leaky,47,10
+0.9834,0.0002,0.5926,0.0091,0.7753,0.0122,0.5926,0.0091,0.6173,0.0099,0.9972,0.0001,,,45.014,0.1213,XGBoost,unsw_nb15,multi,5,leaky,47,10
+0.9832,0.0001,0.5637,0.0062,0.7402,0.0218,0.5637,0.0062,0.5895,0.0091,0.9892,0.0017,,,91.72,1.8783,RandomForest,unsw_nb15,multi,5,leaky,47,10
+0.9708,0.0004,0.3255,0.006,0.3385,0.037,0.3255,0.006,0.3065,0.0052,0.9899,0.0004,,,269.658,6.1717,SVM,unsw_nb15,multi,5,leaky,47,10
+0.9801,0.0003,0.4815,0.005,0.6593,0.0441,0.4815,0.005,0.4848,0.0075,0.9968,0.0001,,,3819.21,1058.0468,MLP,unsw_nb15,multi,5,leaky,47,10
