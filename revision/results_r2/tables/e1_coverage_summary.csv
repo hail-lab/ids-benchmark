@@ -1,0 +1,9 @@
+dataset,scheme,f1_macro,excluded,class_coverage,min_class_coverage,k_unseen_max,accuracy,accuracy_adj,balanced_accuracy,balanced_accuracy_adj,n
+cicids2017,group,0.1651,0.1623,0.39,0.1667,5,0.9852,0.8235,0.9852,0.3852,15
+cicids2017,stratified,0.6166,0.0,1.0,1.0,0,0.9531,0.9531,0.6058,0.6058,15
+cicids2017,temporal,0.1556,0.3306,0.1875,0.125,7,0.9966,0.6672,0.9966,0.1868,6
+ton_iot,group,0.3371,0.1071,0.96,0.8,1,0.7077,0.6091,0.7033,0.6749,15
+ton_iot,stratified,0.8518,0.0,1.0,1.0,0,0.8822,0.8822,0.8592,0.8592,15
+unsw_nb15,group,0.5286,0.0,1.0,1.0,0,0.9773,0.9773,0.6039,0.6039,15
+unsw_nb15,stratified,0.5374,0.0,1.0,1.0,0,0.9792,0.9792,0.5219,0.5219,15
+unsw_nb15,temporal,0.5344,0.0,1.0,1.0,0,0.9635,0.9635,0.5973,0.5973,12
